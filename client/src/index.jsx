@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM  from 'react-dom';
+import Movie from './components/Movie.jsx';
 
 class MovieList extends React.Component {
   constructor() {
     super();
+    console.log(Movie.Movie);
     this.state = {
       movies: [
         {title: 'Mean Girls'},
@@ -20,7 +22,7 @@ class MovieList extends React.Component {
       <div>
         <ul>
           {this.state.movies.map(movie => (
-            <Movie movie={movie} />
+            <Movie.Movie movie={movie} />
           ))}
         </ul>
       </div>
