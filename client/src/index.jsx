@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM  from 'react-dom';
 import Movie from './components/Movie.jsx';
+import Search from './components/Search.jsx';
 
 class MovieList extends React.Component {
   constructor() {
     super();
-    console.log(Movie.Movie);
     this.state = {
       movies: [
         {title: 'Mean Girls'},
@@ -19,12 +19,11 @@ class MovieList extends React.Component {
 
   render() {
     return (
+      
       <div>
-        <ul>
           {this.state.movies.map(movie => (
             <Movie.Movie movie={movie} />
           ))}
-        </ul>
       </div>
     );
   }

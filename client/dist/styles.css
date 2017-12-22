@@ -1,0 +1,11 @@
+.movie {
+  height: 20px;
+  width: 200px;
+  border: solid thin grey;
+  padding: 5px;
+  margin: 2px;
+}
+
+.movieTitle {
+  margin-left: 10px;
+}

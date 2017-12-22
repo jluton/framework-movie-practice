@@ -2,9 +2,11 @@ import React from 'react';
 import ReactDOM  from 'react-dom';
 
 var Movie = (props) => (
-  <li>
-    {props.movie.title}
-  </li>
+  <div class="movie">
+    <span class="movieTitle">
+      {props.movie.title}
+    </span>
+  </div>
 );
 
 exports.Movie = Movie;
